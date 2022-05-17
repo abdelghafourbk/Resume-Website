@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+                <!--Boxicons-->
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+                <!--css styles-->
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
+
+
+    <title>Resume</title>
+</head>
+<body>
+            <!--Header-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Abdelghafour</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon '></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>Profile
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book nav__icon' ></i>Eduacation
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>Skills
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon' ></i>Experience
+                        </a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="#certificate" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>Certificates
+                        </a>
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!--All elements within this div, is generated in PDF-->
+
+        <div class="resume" >
+            <div class="resume__left">
+                <!--HOME-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="Assets/Img/myPic.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title">Abdelghafour <b>BENKHELIFA</b> </h1>
+                            <h3 class="home__profession">Software Engineering Student <i class='bx bx-brain' ></i></h3>
+
+                            <!--Button to download the CV-->
+                            <div>
+                                <a download=" " href="Assets/pdf/CV.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+                        <div class="home__address bd-grid">
+                             <span class="home__information">
+                                <i class='bx bx-map home__icon'></i> Av El-Batha #Metlili - Ghardaia
+                             </span>
+                             <span class="home__information">
+                                <i class='bx bx-envelope home__icon' ></i> abdelghafoubk@gmail.com
+                             </span>
+                             <span class="home__information">
+                                <i class='bx bxs-phone home__icon' ></i> +213 781 334 446 / +213 557 741 895
+                             </span>
+                        </div>
+                    </div>
+
+                 <!--Theme change button-->
+                    <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i> 
+
+                <!--button to generate and download the pdf,Available for desktop-->
+                   <a download="" href="Assets/pdf/CV.pdf"><i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i></a>
+                </section>
+
+                <!--SOCIAL-->
+
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+                    <div class="social__container bd-grid">
+                        <a href="https://www.linkedin.com/in/abdelghafour-benkhelifa-a14398190/ "  target="_blank " class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon' ></i> @Abdelghafour BENKHELIFA
+                        </a>
+                        <a href="https://www.instagram.com/abdelghafour_bk/ " target="_blank " class="social__link">
+                            <i class='bx bxl-instagram social__icon' ></i> @Abdelghafour_bk
+                        </a>
+                        <a href="https://www.facebook.com/lolonouno53 " target="_blank " class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i> @Abdelghafour BENKHELIFA
+                        </a>
+                    </div>
+                </section>
+
+                <!--PROFILE-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title"> Profile</h2>
+                        <p class="profile__description">
+                            highly-motivated software engineering student from University of Science and Technology Houari Boumediene,
+                               passionate about software development, AI , and Startups.
+                               Excellent problem-solving skills, leadership and ability to perform well in a team.
+                                Seeking to grow and develop my own skills as a coder.
+                        </p>
+                </section>
+
+                <!--EDUCATION-->
+
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+                        <div class="education__container bd-grid">
+                           
+                            <div class="education__content">
+                                <div class="education__time">
+                                     <span class="education__rounder"></span>
+                                     <span class="education__line"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Baccalaureate-Maths</h3>
+                                    <span class="education__studies">Hadj Allal Ben Bitour High School</span>
+                                    <span class="education__year">2018</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                     <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Software Engineering Degree</h3>
+                                    <span class="education__studies">University of Science and Technology Houari Boumediene</span>
+                                    <span class="education__year">2018-2022</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                <!--SKILLS-->
+
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Web Dev
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Advanced NodeJs
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> C
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Java
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> MongoDB
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Ejs
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> python
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Flutter
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> UI/UX Design
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Adobe XD & Figma
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> AI
+                                </li>
+                            </ul>
+                        </div>
+
+                    </section>
+
+
+            </div>
+
+            <div class="resume__right">
+
+                <!--===EXPERIENCE===-->
+
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experience</h2>
+
+                    <div class="experience___container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Volunteer</h3>
+                                <span class="experience__company">Association Imam Ali Ibn Abi Taleb Mousque</span>
+                                <span class="experience__time">2016-Present</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Founder Of Manipulator Tech Blog</h3>
+                                <span class="experience__company">Tech News Blog And E-shop</span>
+                                <span class="experience__time">2018-2020</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">FullStack dev TraineeShip</h3>
+                                <span class="experience__company">Micro Club</span>
+                                <span class="experience__time">Mars 2020 - Nov 2020</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">IT Department Member</h3>
+                                <span class="experience__company">Micro Club</span>
+                                <span class="experience__time">Feb 2021 - Present</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">External Relations Department Member</h3>
+                                <span class="experience__company">Micro Club</span>
+                                <span class="experience__time">Mars 2022 - Present</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">2<sup>nd</sup>/20 place in Hack!T</h3>
+                                <span class="experience__company">CSE Hackathon</span>
+                                <span class="experience__time">May 2022</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!--===CERTIFICATES===-->
+
+                <section class="certificate section" id="certificate">
+                    <h2 class="section-title">Certificates</h2>
+                    <div class="certificate__container bd-grid">
+
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">Full Stack Developement Track</h3>
+                            <span class="certificate__from">Udacity Certificate Of Completion</span> 
+                            <span class="Certificate__date">Apr 2020</span>    
+                        </div>
+
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">AI HOMECAMP</h3>
+                            <span class="certificate__from">Limitless Learning Certificate Of Completion</span>  
+                            <span class="Certificate__date">Jul 2020</span>   
+                        </div>
+
+                        
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">NodeJs</h3>
+                            <span class="certificate__from">Micro Club</span> 
+                            <span class="Certificate__date">Nov 2020</span>    
+                        </div>
+
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">UI / UX Design</h3>
+                            <span class="certificate__from">Udemy</span>  
+                            <span class="Certificate__date">Nov 2020 </span>   
+                        </div>
+
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">Stacked Day Trainer</h3>
+                            <span class="certificate__from">GDSC USTHB</span>  
+                            <span class="Certificate__date">Mars 2022</span>   
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!--===LANGUAGES===-->
+
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Arabic
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> English
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> French
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+
+                <!--===INTERESTS===-->
+
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+                    
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-rocket interests__icon'></i>
+                            <span class="interests__name">Startups</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bxs-plane-alt interests__icon'></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+                        
+                        <div class="interests__content">
+                            <i class='bx bx-football interests__icon' ></i>
+                            <span class="interests__name">Football</span>
+                        </div>
+                        
+                        <div class="interests__content">
+                            <i class='bx bx-game interests__icon' ></i>
+                            <span class="interests__name">Gaming</span>
+                        </div>
+
+                    </div>
+                </section>
+
+
+
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--====SCROLL TOP===-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+            <!--Main.js-->
+    <script src="Assets/Js/main.js">     
+    
+    </script>
+
+
+</body>
+</html>
