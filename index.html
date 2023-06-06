@@ -15,6 +15,9 @@
 
 
     <title>Resume</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+
 </head>
 <body>
             <!--Header-->
@@ -80,7 +83,7 @@
                             <img src="Assets/Img/myPic.jpg" alt="" class="home__img">
 
                             <h1 class="home__title">Abdelghafour <b>BENKHELIFA</b> </h1>
-                            <h3 class="home__profession">Software Engineering Student <i class='bx bx-brain' ></i></h3>
+                            <h3 class="home__profession">Visual Computing Student <i class='bx bx-brain' ></i></h3>
 
                             <!--Button to download the CV-->
                             <div>
@@ -104,7 +107,7 @@
                     <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i> 
 
                 <!--button to generate and download the pdf,Available for desktop-->
-                   <a download="" href="Assets/pdf/CV.pdf"><i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i></a>
+                   <a download="" href="Assets/pdf/CV.pdf"><i class="bx bx-download generate-pdf" title="Generate PDF" id="downloadBtn"></i></a>
                 </section>
 
                 <!--SOCIAL-->
@@ -113,13 +116,13 @@
                     <h2 class="section-title">SOCIAL</h2>
                     <div class="social__container bd-grid">
                         <a href="https://www.linkedin.com/in/abdelghafour-benkhelifa-a14398190/ "  target="_blank " class="social__link">
-                            <i class='bx bxl-linkedin-square social__icon' ></i> @Abdelghafour BENKHELIFA
+                            <i class='bx bxl-linkedin-square social__icon' ></i> Abdelghafour BENKHELIFA
                         </a>
                         <a href="https://www.instagram.com/abdelghafour_bk/ " target="_blank " class="social__link">
-                            <i class='bx bxl-instagram social__icon' ></i> @Abdelghafour_bk
+                            <i class='bx bxl-instagram social__icon' ></i> Abdelghafour_bk
                         </a>
-                        <a href="https://www.facebook.com/lolonouno53 " target="_blank " class="social__link">
-                            <i class='bx bxl-facebook social__icon'></i> @Abdelghafour BENKHELIFA
+                        <a href="https://github.com/abdelghafourbk " target="_blank " class="social__link">
+                            <i class='bx bxl-github' style="margin-right: 8px;">  </i>  Abdelghafour BENKHELIFA
                         </a>
                     </div>
                 </section>
@@ -128,10 +131,15 @@
                 <section class="profile section" id="profile">
                     <h2 class="section-title"> Profile</h2>
                         <p class="profile__description">
-                            highly-motivated software engineering student from University of Science and Technology Houari Boumediene,
-                               passionate about software development, AI , and Startups.
-                               Excellent problem-solving skills, leadership and ability to perform well in a team.
-                                Seeking to grow and develop my own skills as a coder.
+                            I am an enthusiastic and motivated individual, 
+                            driven by my passion for astronomy and my dedication
+                             to studying visual computing. With a strong track record 
+                             of participating in competitions and hackathons, I thrive 
+                             on challenging myself and pushing the boundaries of what I 
+                             can achieve. As a natural leader, I excel in team
+                            environments and possess excellent problem-solving skills.
+                            My ultimate goal is to continue growing as an engineer and making
+                            a positive impact in the world of technology.
                         </p>
                 </section>
 
@@ -156,12 +164,24 @@
                             <div class="education__content">
                                 <div class="education__time">
                                      <span class="education__rounder"></span>
-                                    <!-- <span class="education__line"></span> -->
+                                    <span class="education__line"></span>
                                 </div>
                                 <div class="education__data bd-grid">
                                     <h3 class="education__title">Software Engineering Degree</h3>
                                     <span class="education__studies">University of Science and Technology Houari Boumediene</span>
                                     <span class="education__year">2018-2022</span>
+                                </div>
+                            </div>
+
+                            <div class="education__content">
+                                <div class="education__time">
+                                     <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Visual Computing Magister Degree</h3>
+                                    <span class="education__studies">University of Science and Technology Houari Boumediene</span>
+                                    <span class="education__year">2022-2024</span>
                                 </div>
                             </div>
 
@@ -176,7 +196,7 @@
                         <div class="skills__content bd-grid">
                             <ul class="skills__data">
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> Web Dev
+                                    <span class="skills__circle"></span> Back-end
                                 </li>
                                 <li class="skills__name">
                                     <span class="skills__circle"></span> Advanced NodeJs
@@ -185,7 +205,7 @@
                                     <span class="skills__circle"></span> C
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> Java
+                                    <span class="skills__circle"></span> JavaScript
                                 </li>
                                 <li class="skills__name">
                                     <span class="skills__circle"></span> MongoDB
@@ -193,8 +213,6 @@
                                 <li class="skills__name">
                                     <span class="skills__circle"></span> Ejs
                                 </li>
-                            </ul>
-                            <ul class="skills__data">
                                 <li class="skills__name">
                                     <span class="skills__circle"></span> python
                                 </li>
@@ -208,13 +226,70 @@
                                     <span class="skills__circle"></span> Adobe XD & Figma
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> AI
+                                    <span class="skills__circle"></span> AI, Machine & Deep Learning
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span> Mobile dev
                                 </li>
                             </ul>
+                            <!-- <ul class="skills__data">
+                                
+                            </ul> -->
                         </div>
 
                     </section>
 
+                            <!--===LANGUAGES===-->
+
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Arabic
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> English
+                            </li>
+
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> French
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                
+                <!--===INTERESTS===-->
+
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+                    
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-rocket interests__icon'></i>
+                            <span class="interests__name">Startups</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bxs-plane-alt interests__icon'></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+                        
+                        <div class="interests__content">
+                            <i class='bx bx-football interests__icon' ></i>
+                            <span class="interests__name">Football</span>
+                        </div>
+                        
+                        <div class="interests__content">
+                            <i class='bx bx-game interests__icon' ></i>
+                            <span class="interests__name">Gaming</span>
+                        </div>
+
+                    </div>
+                </section>
 
             </div>
 
@@ -235,7 +310,7 @@
                             <div class="experience__data bd-grid">
                                 <h3 class="experience__title">Volunteer</h3>
                                 <span class="experience__company">Association Imam Ali Ibn Abi Taleb Mousque</span>
-                                <span class="experience__time">2016-Present</span>
+                                <span class="experience__time">2016-2021</span>
                             </div>
                         </div>
 
@@ -277,6 +352,19 @@
                                 <span class="experience__time">Feb 2021 - Present</span>
                             </div>
                         </div>
+                       
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">UI & UX Manager </h3>
+                                <span class="experience__company">Micro Club</span>
+                                <span class="experience__time">Oct 2021 - Mars 2023</span>
+                            </div>
+                        </div>
 
                         <div class="experience__content">
                             <div class="experience__time">
@@ -285,12 +373,116 @@
                             </div>
 
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">External Relations Department Member</h3>
+                                <h3 class="experience__title">External Relations & Sponsorship Department Member - Currently the Team Leader- </h3>
                                 <span class="experience__company">Micro Club</span>
                                 <span class="experience__time">Mars 2022 - Present</span>
                             </div>
                         </div>
+                      
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
 
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">NodeJS Trainer -Stacked Day Event-</h3>
+                                <span class="experience__company">GDSC Club</span>
+                                <span class="experience__time">Mars 2022</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">2<sup>nd</sup>/20 place in Hack!T</h3>
+                                <span class="experience__company">CSE Hackathon</span>
+                                <span class="experience__time">May 2022</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Digital African Summit 2022</h3>
+                                <span class="experience__company">DAS 3 days at the center of the African ecosystem</span>
+                                <span class="experience__time">June 2022</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">TOP 10 in AI HACK TUNISIA</h3>
+                                <span class="experience__company">InstaDeep organized the largest ML Hackathon in Africa and the Middle East in Tunisia, in partnership with Google, more than 1000 participants</span>
+                                <span class="experience__time">Aug 2022</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">2<sup>nd</sup>/20 place in JumpStart Junction challenge</h3>
+                                <span class="experience__company">Junction Sub-Hackathon challenge</span>
+                                <span class="experience__time">Sep 2022</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Nasa Space App Challenge Organizer & Sponsorship responsible</h3>
+                                <span class="experience__company">The hackathon organized by Micro Club the local lead of the competition in Algeria</span>
+                                <span class="experience__time">Oct 2022</span>
+                            </div>
+                        </div>
+                        
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">LinkedIn Local Algiers Organizer</h3>
+                                <span class="experience__company">LinkedIn Local Algiers Event</span>
+                                <span class="experience__time">Jan 2023</span>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                               <span class="experience__line"></span>
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Micro Hack Organizer & Sponsorship responsible</h3>
+                                <span class="experience__company">The first hackathon of Micro Club</span>
+                                <span class="experience__time">Feb 2023</span>
+                            </div>
+                        </div>
+                        
                         <div class="experience__content">
                             <div class="experience__time">
                                 <span class="experience__rounder"></span>
@@ -298,9 +490,9 @@
                             </div>
 
                             <div class="experience__data bd-grid">
-                                <h3 class="experience__title">2<sup>nd</sup>/20 place in Hack!T</h3>
-                                <span class="experience__company">CSE Hackathon</span>
-                                <span class="experience__time">May 2022</span>
+                                <h3 class="experience__title">Satellite Development Center X Startup Ministry Partnership Guest</h3>
+                                <span class="experience__company">A Partnership between the CDS and the Minstry of Knowledge Economy, Startups and Micro-enterprises, were i was invited as guest for the great job we did in NASA Space app challenge organization</span>
+                                <span class="experience__time">Mars 2023</span>
                             </div>
                         </div>
 
@@ -337,70 +529,34 @@
                             <span class="certificate__from">Udemy</span>  
                             <span class="Certificate__date">Nov 2020 </span>   
                         </div>
+                        
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">Dart Language</h3>
+                            <span class="certificate__from">Udemy</span>  
+                            <span class="Certificate__date">Dec 2021 </span>   
+                        </div>
 
                         <div class="certificate__content bd-grid">
                             <h3 class="certificate__title">Stacked Day Trainer</h3>
                             <span class="certificate__from">GDSC USTHB</span>  
                             <span class="Certificate__date">Mars 2022</span>   
                         </div>
-
-                    </div>
-
-                </section>
-
-                <!--===LANGUAGES===-->
-
-                <section class="languages section">
-                    <h2 class="section-title">Languages</h2>
-
-                    <div class="languages__container">
-                        <ul class="languages__content bd-grid">
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> Arabic
-                            </li>
-
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> English
-                            </li>
-
-                            <li class="languages__name">
-                                <span class="languages__circle"></span> French
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-
-
-                <!--===INTERESTS===-->
-
-                <section class="interests section">
-                    <h2 class="section-title">Interests</h2>
-                    
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content">
-                            <i class='bx bx-rocket interests__icon'></i>
-                            <span class="interests__name">Startups</span>
-                        </div>
-
-                        <div class="interests__content">
-                            <i class='bx bxs-plane-alt interests__icon'></i>
-                            <span class="interests__name">Travel</span>
+                        
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">JumpStart 2nd place certificate</h3>
+                            <span class="certificate__from">Junction</span>  
+                            <span class="Certificate__date">Sep 2022</span>   
                         </div>
                         
-                        <div class="interests__content">
-                            <i class='bx bx-football interests__icon' ></i>
-                            <span class="interests__name">Football</span>
-                        </div>
-                        
-                        <div class="interests__content">
-                            <i class='bx bx-game interests__icon' ></i>
-                            <span class="interests__name">Gaming</span>
+                        <div class="certificate__content bd-grid">
+                            <h3 class="certificate__title">Galactic Team Member certificate from NASA</h3>
+                            <span class="certificate__from">Nasa Space App Challenge</span>  
+                            <span class="Certificate__date">Oct 2022</span>   
                         </div>
 
                     </div>
-                </section>
 
+                </section>
 
 
 
@@ -420,6 +576,21 @@
     
     </script>
 
+
+    <script>
+        document.getElementById("resume-button").addEventListener("click", function() {
+          // Create a new jsPDF instance
+          var doc = new jsPDF();
+      
+          // Generate PDF from the HTML content of the whole page
+          doc.html(document.body, {
+            callback: function(pdf) {
+              // Save the PDF as a file with a specified name
+              pdf.save("downloaded_page.pdf");
+            }
+          });
+        });
+      </script>
 
 </body>
 </html>

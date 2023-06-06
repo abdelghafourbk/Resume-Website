@@ -1,4 +1,19 @@
-        /*=====SHOW MENU=====*/
+     
+     document.getElementById("downloadBtn").addEventListener("click", function() {
+       // Create a new jsPDF instance
+       var doc = new jsPDF();
+   
+       // Convert HTML to PDF
+       doc.html(document.body, {
+         callback: function(pdf) {
+           // Save the PDF as a file with a specified name
+           pdf.save("downloaded_page.pdf");
+         }
+       });
+     });
+   
+     
+     /*=====SHOW MENU=====*/
         const showMenu = (toggleId, navId) =>{
             const toggle = document.getElementById(toggleId),
             nav = document.getElementById(navId)

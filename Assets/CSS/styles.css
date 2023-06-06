@@ -322,6 +322,7 @@
     }
 
     .social__link{
+        /* margin-right: 5px; */
         display: inline-flex;
         align-items: center;
         font-size: var(--small-font-size);
