@@ -428,6 +428,51 @@
         margin-right: .75rem;
     }
 
+    /*Projects*/
+    .projects {
+        padding: 1.5rem 0;
+    }
+    
+    .projects__content {
+        display: grid;
+        gap: 1.5rem;
+    }
+    
+    .project {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: var(--container-color);
+        padding: 1rem;
+        border-radius: .5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project__icon {
+        font-size: 2rem; /* Adjust size as needed */
+        color: var(--title-color);
+    }
+    
+    .project__details {
+        flex: 1;
+    }
+    
+    .project__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-1);
+    }
+    
+    .project__description {
+        font-size: var(--normal-font-size);
+        color: var(--text-color-light);
+    }
+    
+    .project__technologies {
+        display: block;
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+        margin-top: var(--mb-1);
+    }
 
     /*Certificates*/
 
@@ -561,5 +606,6 @@
 
 
         }
+
     
 
